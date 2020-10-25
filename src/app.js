@@ -18,11 +18,11 @@ app.set('views', path.join(__dirname,'views'));
 //middlewares
 app.use(morgan('dev'));
 app.use(myconnection(mysql,{
-    host: '127.0.0.1',
-    user:'root',
-    password:'',
+    host: 'ou6zjjcqbi307lip.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+    user:'oev2wvfokjf4ui7w',
+    password:'w4hyauqzonu721jz',
     port: 3306,
-    database:'bdpractica'
+    database:'m590k7gxzt0gwlqv'
 }, 'single'));
 // app.use(express.urlencoded({extended:false}));//me permite convertir mis datos del formulario en un objeto 
 app.use(bodyParser.urlencoded({extended:false}));//extended quiere decir que solo va aceptar formatos en string 

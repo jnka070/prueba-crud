@@ -1,5 +1,0 @@
-crear una instancia de mysql en heroku
-
-heroku addons:create cleardb:ignite
-heroku config | grep CLEARDB_DATABASE_URL 
-heroku config:set DATABASE_URL= urlgenerada
