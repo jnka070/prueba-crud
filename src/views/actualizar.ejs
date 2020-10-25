@@ -1,36 +1,36 @@
 <%- include ("./partials/_header") %>
 
-<div class="container">
-    <div class="row mt-5">
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-body">
-                    <form action="/update/<%= data.id %>" method="post">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-xs-6">
+                <div class="card">
+                    <div class="card-body">
+                        <form action="/update/<%= data.id %>" method="post">
 
-                        <div class="form-group">
-                            <input type="text" name="nombres" value="<%=data.nombres %>" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="apellidos" value="<%=data.apellidos%>" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="direccion" value="<%=data.direccion%>" class="form-control">
+                            <div class="form-group">
+                                <input type="text" name="nombres" value="<%=data.nombres %>" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="apellidos" value="<%=data.apellidos%>" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="direccion" value="<%=data.direccion%>" class="form-control">
 
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="telefono" value="<%=data.telefono%>" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="telefono" value="<%=data.telefono%>" class="form-control">
 
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="email" value="<%=data.email%>" class="form-control">
-                        </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="email" value="<%=data.email%>" class="form-control">
+                            </div>
 
-                        <button type="submit" class="btn btn-primary"> ACTUALIZAR</button>
-                        <a href="/" class="btn btn-dark">CANCELAR</a>
-                    </form>
+                            <button type="submit" class="btn btn-primary"> ACTUALIZAR</button>
+                            <a href="/" class="btn btn-dark">CANCELAR</a>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<%- include ("./partials/_footer") %>
+    <%- include ("./partials/_footer") %>
