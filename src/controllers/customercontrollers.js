@@ -6,7 +6,6 @@ primerobjeto.list = function(req, res) {
             if (err) {
                 res.json(command);
             }
-            console.log(registros);
             res.render('registro', {
                 data: registros
             });

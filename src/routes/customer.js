@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const cuscontroller = require('../controllers/customercontrollers');
 
-router.get('/', cuscontroller.list);
+router.get('/register', cuscontroller.list);
 router.post('/register', cuscontroller.save);
 router.get('/delete/:id', cuscontroller.delete);
 
